@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Neucha&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.App {
+  width: 100vw;
+  height: 1000vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #B9B4C7;
+  font-family: 'Neucha', cursive;
+  overflow-x: hidden;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+.input-form {
+  display: flex;
+  width: 95% ;
+  position: relative;
+  align-items: center;
+}
+
+.input-box {
+  width: 100% ;
+  border-radius: 50px;
+  padding: 20px 50px;
+  font-size: 25px;
+  border: none;
+  transition: 0.25;
+  box-shadow: inset 0 0 5px black;
+}
+
+
+.input-box:focus {
+  box-shadow: 0 0 10px 100vh rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.submit-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px 12px 12px 12px;
+  border-radius: 50%;
+  right: 0;
+  border: none;
+  font-size: 15px;
+  background-color: #352F44;
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+}
+
+.submit-btn:hover {
+  background-color: #5C5470;
+}
+
+.submit-btn:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
+
+.todos {
+  display: flex;
+  width: 47.5%;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #352F44;
+}
+
+.remove {
+  background-color: #5C5470;
+}
+
+.todo-form {
+  display: flex;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: #FAF0E6;
+  transition: 0.2s;
+}
+
+.todo-form:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 5px black;
+}
+
+.todos-card-text {
+  flex: 1;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+.todos-card-text:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.input-edit {
+  flex: 1;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tasks-heading{
+  font-size: 40px;
+  color: white;
+}
+
+
+
+
+@media (max-width: 1100px) {
+  .todos {
+    width: 45%;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+}
+
+
+@media (max-width: 700px) {
+  .input-box {
+    width: 95%;
+  }
+
+  .todos {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    width: 95%;
+    flex-direction: column;
+  }
+  
+}
